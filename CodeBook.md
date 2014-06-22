@@ -1,4 +1,4 @@
-###INTRODUCTION
+##INTRODUCTION
 This repo is submitted as a project for the Coursera Getting and Cleaning Data course.  The data sets in this repo are cleaned-up versions of the UCI HCI data set, which is described here:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -14,14 +14,14 @@ The UCI data set contains a large number of variables measured using Samsung Gal
 This section summarizes the transformations that were made to the UCI data to make the tidy data sets in this repo.  For a detailed view of the transformations, please see the R script entitled "run_analysis.R" and the comments therein.  
 1. Data from the 'test' data set were loaded from the "X_test.txt" file into a data frame.
 2. Variable names from the "features.txt" file were assigned to the columns of the data frame.
-2. Variables (columns) with names not ending in "-mean()" or "-std()" were removed.
-3. Subject numbers, activity numbers, and activity names were pre-pended to the data frame using the data in the "subject_test.txt", "Y_test.txt" and "activity_labels.txt" files, respectively.
-4. Steps 1-4 were repeated with data from the 'training' data set.  To do this, the files named "X_train.txt", "subject_train.txt", and "Y_train.txt" were used in place of the files with "test" in the name.
-5. The data frames for 'test' and 'training' data were combined by stacking one on top of the other.
-6. The combined data frame was sorted first by subject and then by activity number.
-7. The sorted combined data frame was saved as "mytidydataset.txt".
-8. A new data frame was constructed by averaging data in the combined data frame for each subject-activity pair.
-9. The new data frame was saved as "mytidydataset_avg.txt".
+3. Variables (columns) with names not ending in "-mean()" or "-std()" were removed.
+4. Subject numbers, activity numbers, and activity names were pre-pended to the data frame using the data in the "subject_test.txt", "Y_test.txt" and "activity_labels.txt" files, respectively.
+5. Steps 1-4 were repeated with data from the 'training' data set.  To do this, the files named "X_train.txt", "subject_train.txt", and "Y_train.txt" were used in place of the files with "test" in the name.
+6. The data frames for 'test' and 'training' data were combined by stacking one on top of the other.
+7. The combined data frame was sorted first by subject and then by activity number.
+8. The sorted combined data frame was saved as "mytidydataset.txt".
+9. A new data frame was constructed by averaging data in the combined data frame for each subject-activity pair.
+10. The new data frame was saved as "mytidydataset_avg.txt".
 
 
 ##Variables identifying measurement context
@@ -57,25 +57,25 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+* mean(): Mean value
+* std(): Standard deviation
