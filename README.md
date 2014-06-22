@@ -4,8 +4,8 @@ This repo contains the following files:
 
 1. README.md: this read-me file.
 2. run_analysis.R: an R script that reads the UCI HCI data and outputs two tidy data sets.
-3. mytidydataset.txt: a comma-delimited text file containing a tidy data set. 
-4. mytidydataset_avg.txt: like mytidydataset.txt, but with the data averaged for subject-activity pairs.
+3. mytidyset.txt: a comma-delimited text file containing a tidy data set. 
+4. mytidyset_avg.txt: like mytidydataset.txt, but with the data averaged for subject-activity pairs.
 5. CodeBook.md: a markdown file that describes the data in the repo.  
 
 PLEASE REFER TO CODEBOOK.MD FOR MORE INFORMATION ABOUT THIS PROJECT.

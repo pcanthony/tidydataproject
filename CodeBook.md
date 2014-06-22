@@ -20,9 +20,9 @@ This section summarizes the transformations that were made to the UCI data to ma
 5. Steps 1-4 were repeated with data from the 'training' data set.  To do this, the files named "X_train.txt", "subject_train.txt", and "Y_train.txt" were used in place of the files with "test" in the name.
 6. The data frames for 'test' and 'training' data were combined by stacking one on top of the other.
 7. The combined data frame was sorted first by subject and then by activity number.
-8. The sorted combined data frame was saved as "mytidydataset.txt".
+8. The sorted combined data frame was saved as "mytidyset.txt".
 9. A new data frame was constructed by averaging data in the combined data frame for each subject-activity pair.
-10. The new data frame was saved as "mytidydataset_avg.txt".
+10. The new data frame was saved as "mytidyset_avg.txt".
 
 
 ##Variables identifying measurement context
@@ -38,14 +38,14 @@ The tidy data sets included in this repo have three variables as the left-most c
 
 There are two tidy data sets included in this repo:
 
-1. mytidydataset.txt
-2. mytidydataset_avg.txt
+1. mytidyset.txt
+2. mytidyset_avg.txt
 
 The data sets are comma-delimited text files.
 
-'mytidydataset.txt' includes data sorted first by subject and then by activity number.  There are multiple measurements made for each subject carrying out each activity.  For example, there are 95 measurements made of subject 1 carrying out activity 1, which is walking.  Each measurement occurs in one row of the data set.  
+'mytidyset.txt' includes data sorted first by subject and then by activity number.  There are multiple measurements made for each subject carrying out each activity.  For example, there are 95 measurements made of subject 1 carrying out activity 1, which is walking.  Each measurement occurs in one row of the data set.  
 
-'mytidydataset_avg.txt' includes data sorted the same way, but the data are averaged by subject-activity pair.  So the 95 measurements of subject 1 walking are averaged together, and the averages appear in one row of the data set.
+'mytidyset_avg.txt' includes data sorted the same way, but the data are averaged by subject-activity pair.  So the 95 measurements of subject 1 walking are averaged together, and the averages appear in one row of the data set.
 
 
 ##Feature Selection (reproduced from UCI documentation)
