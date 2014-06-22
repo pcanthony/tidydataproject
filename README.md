@@ -8,7 +8,7 @@ This repo contains the following files:
 4. mytidydataset_avg.txt: like mytidydataset.txt, but with the data averaged for subject-activity pairs.
 5. CodeBook.md: a markdown file that describes the data in the repo.  
 
-PLEASE REFER TO THE CODEBOOK.MD FOR MORE INFORMATION ABOUT THIS PROJECT.
+PLEASE REFER TO CODEBOOK.MD FOR MORE INFORMATION ABOUT THIS PROJECT.
 
 
 To re-produce the tidy data sets, do the following:
@@ -24,4 +24,5 @@ The data transformations carried out in run_analysis.R are documented in the cod
 
 
 Thanks for reading!
+
 --Peter
