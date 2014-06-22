@@ -1,6 +1,7 @@
 Welcome to Peter's Getting and Cleaning Data Course Project!
 
 This repo contains the following files:
+
 1. README.md: this read-me file.
 2. run_analysis.R: an R script that reads the UCI HCI data and outputs two tidy data sets.
 3. mytidydataset.txt: a comma-delimited text file containing a tidy data set. 

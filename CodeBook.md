@@ -12,6 +12,7 @@ The UCI data set contains a large number of variables measured using Samsung Gal
 
 ##Transformations
 This section summarizes the transformations that were made to the UCI data to make the tidy data sets in this repo.  For a detailed view of the transformations, please see the R script entitled "run_analysis.R" and the comments therein.  
+
 1. Data from the 'test' data set were loaded from the "X_test.txt" file into a data frame.
 2. Variable names from the "features.txt" file were assigned to the columns of the data frame.
 3. Variables (columns) with names not ending in "-mean()" or "-std()" were removed.
@@ -27,6 +28,7 @@ This section summarizes the transformations that were made to the UCI data to ma
 ##Variables identifying measurement context
 
 The tidy data sets included in this repo have three variables as the left-most columns:
+
 1. 'subject': the number of the subject (person) for whom the measurements were made	
 2. 'activity num': a number representing the activity the subject was carrying out when the measurement was made.	
 3. 'activity': a description of the activity the subject was carrying out when the measurement was made. 
